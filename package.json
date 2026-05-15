@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "KKTRKKT's Portfolio",
   "source": "src/index.html",
-  "homepage": " https://kktrkkt.github.io/Portfolio/",
+  "homepage": " https://portfolio.kktrkkt.dev/",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
