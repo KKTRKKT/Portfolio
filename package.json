@@ -7,9 +7,9 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://kktrkkt.github.io/Portfolio/'",
+    "build-gh": "parcel build --public-url 'https://portfolio.kktrkkt.dev/'",
     "predeploy": "npm run build-gh",
-    "deploy": "gh-pages -d dist -r https://$GH_TOKEN@github.com/KKTRKKT/Portfolio.git"
+    "deploy": "gh-pages -d dist -r https://$GH_TOKEN@github.com/KKTRKKT/portfolio.git"
   },
   "repository": {
     "type": "git",
