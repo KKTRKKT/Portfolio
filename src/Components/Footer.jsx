@@ -1,141 +1,93 @@
-/**
- * Footer component
- *
- * Displays avenues to contact you.
- * Contact information is passed in from the App component that
- * renders the Footer.
- *
- * If a social value has an empty string it will not be displayed.
- */
 import React from "react";
-import PropTypes from "prop-types";
+import { Button, Icon, SectionMarker } from "./ui";
 
-import devDotToIcon from "../images/socials/devdotto.svg";
-import envelopeIcon from "../images/socials/envelope.svg";
-import gitHubIcon from "../images/socials/github.svg";
-import instagramIcon from "../images/socials/instagram.svg";
-import linkedInIcon from "../images/socials/linkedin.svg";
-import mediumIcon from "../images/socials/medium.svg";
-import twitterIcon from "../images/socials/twitter.svg";
-import youTubeIcon from "../images/socials/youtube.svg";
-
-/**
- * 💡 Learning resources
- *
- *  HTML hyperlinks: https://www.w3schools.com/html/html_links.asp
- *  Opening links in new tabs: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
- */
-
-const Footer = (props) => {
-  const {
-    devDotTo,
-    email,
-    gitHub,
-    instagram,
-    linkedIn,
-    medium,
-    name,
-    primaryColor,
-    twitter,
-    youTube,
-  } = props;
-
+export function Writing({ data }) {
+  const hasItems = data.writing && data.writing.length > 0;
   return (
-    <div
-      id="footer"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "2.5rem",
-        padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
-        width: "100vw"
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "2.5rem",
-        }}
-      >
-        {email && (
-          <a href={`mailto:${email}`}>
-            <img src={envelopeIcon} alt="email" className="socialIcon" />
-          </a>
-        )}
-        {devDotTo && (
-          <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
-            <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
-          </a>
-        )}
-        {gitHub && (
-          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
-            <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
-          </a>
-        )}
-        {instagram && (
-          <a
-            href={`https://www.instagram.com/${instagram}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={instagramIcon} alt="Instagram" className="socialIcon" />
-          </a>
-        )}
-        {linkedIn && (
-          <a
-            href={`https://www.linkedin.com/in/${linkedIn}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
-          </a>
-        )}
-        {medium && (
-          <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
-            <img src={mediumIcon} alt="Medium" className="socialIcon" />
-          </a>
-        )}
-        {twitter && (
-          <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-            <img src={twitterIcon} alt="Twitter" className="socialIcon" />
-          </a>
-        )}
-        {youTube && (
-          <a
-            href={`https://www.youtube.com/c/${youTube}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
-          </a>
+    <section className="section" id="writing" aria-labelledby="writing-h">
+      <div className="wrap">
+        <SectionMarker num="05 —" label="Writing / Insights" />
+        <h2 id="writing-h">기록</h2>
+        <p className="sub">고민의 과정을 글로 남깁니다. 회고와 기술 노트.</p>
+        {hasItems ? (
+          <div className="write-list" style={{ marginTop: 24 }}>
+            {data.writing.map((w, i) => (
+              <a
+                className="write-row"
+                key={i}
+                href={w.href || "#"}
+                onClick={(e) => {
+                  if (!w.href) e.preventDefault();
+                }}
+              >
+                <span className="date">{w.date}</span>
+                <span className="t">{w.title}</span>
+                <Icon name="arrow-up-right" size={17} />
+              </a>
+            ))}
+          </div>
+        ) : (
+          <div className="write-empty" style={{ marginTop: 24 }}>
+            준비 중입니다. 회고 글을 정리하는 대로 이곳에 올립니다.
+          </div>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
-      </p>
-    </div>
+    </section>
   );
-};
+}
 
-Footer.defaultProps = {
-  name: "",
-};
+export function Contact({ data, onCopy }) {
+  return (
+    <section className="contact" id="contact" aria-labelledby="contact-h">
+      <div className="wrap">
+        <SectionMarker num="06 —" label="Contact" />
+        <h2 id="contact-h">함께 풀고 싶은 문제가 있다면</h2>
+        <p className="lead">
+          백엔드·데이터 플랫폼 관련 제안을 환영합니다. 가장 빠른 연락은 이메일입니다.
+        </p>
+        <div className="contact-actions">
+          <Button
+            variant="primary"
+            icon="mail"
+            onClick={() => (window.location.href = "mailto:" + data.email)}
+          >
+            {data.email}
+          </Button>
+          <Button variant="secondary" icon="copy" onClick={() => onCopy(data.email)}>
+            복사
+          </Button>
+          <Button variant="secondary" icon="download" onClick={() => onCopy("이력서 PDF")}>
+            이력서 PDF
+          </Button>
+        </div>
+        <div className="contact-meta">
+          <a href={data.github} target="_blank" rel="noreferrer">
+            <Icon name="github" size={16} />
+            github.com/kktrkkt
+          </a>
+          <a
+            href="#top"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <Icon name="arrow-up-right" size={16} />
+            맨 위로
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
 
-Footer.propTypes = {
-  devDotTo: PropTypes.string,
-  email: PropTypes.string,
-  gitHub: PropTypes.string,
-  instagram: PropTypes.string,
-  linkedIn: PropTypes.string,
-  medium: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  primaryColor: PropTypes.string,
-  twitter: PropTypes.string,
-  youTube: PropTypes.string,
-
-};
-
-export default Footer;
+export function Footer() {
+  return (
+    <footer className="wrap">
+      <div className="foot">
+        <span className="c">© 2026 Sung Hyun Lee</span>
+        <span className="c">Built with Pretendard · IBM Plex Mono</span>
+      </div>
+    </footer>
+  );
+}

@@ -1,0 +1,73 @@
+/* ============================================================
+   SHL Backend Portfolio — Foundations
+   Typography + Color + Spacing tokens, plus semantic styles.
+   ============================================================ */
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+               system-ui, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', 'JetBrains Mono',
+               Menlo, Consolas, monospace;
+
+  --paper:        #FBFBF9;
+  --surface:      #FFFFFF;
+  --surface-2:    #F4F4F0;
+  --surface-3:    #ECECE7;
+
+  --ink:          #17181B;
+  --ink-2:        #565860;
+  --ink-3:        #8B8D94;
+  --ink-inverse:  #FBFBF9;
+
+  --line:         #E7E7E1;
+  --line-strong:  #D4D4CD;
+
+  --accent:       #2A4BD8;
+  --accent-hover: #1F39AE;
+  --accent-soft:  #ECEFFB;
+  --accent-line:  #C6D0F4;
+  --accent-ink:   #FBFBF9;
+
+  --pos:          #1E7F4E;
+  --pos-soft:     #E7F3EC;
+  --warn:         #B6791B;
+  --warn-soft:    #F6EEDD;
+  --neg:          #C0392B;
+  --neg-soft:     #F8EAE8;
+
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 16px;
+  --r-pill: 999px;
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
+  --shadow-sm: 0 1px 2px rgba(23, 24, 27, 0.04);
+  --shadow-md: 0 4px 16px -6px rgba(23, 24, 27, 0.10);
+  --shadow-lg: 0 18px 48px -18px rgba(23, 24, 27, 0.18);
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --dur-slow: 360ms;
+
+  --maxw: 1080px;
+  --maxw-narrow: 720px;
+}
+
+* { box-sizing: border-box; }
+::selection { background: var(--accent-soft); color: var(--accent-hover); }

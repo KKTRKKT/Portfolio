@@ -1,9 +1,9 @@
 {
   "name": "kktrkkt-portfolio",
   "version": "1.0.0",
-  "description": "KKTRKKT's Portfolio",
+  "description": "이성현 · Backend Engineer Portfolio — KISTI · 커미조아 · 수자원공사 케이스 스터디",
   "source": "src/index.html",
-  "homepage": " https://portfolio.kktrkkt.dev",
+  "homepage": "https://portfolio.kktrkkt.dev",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
   },
-  "author": "Microsoft",
+  "author": "Sung Hyun Lee (이성현) <paulhana6006@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
