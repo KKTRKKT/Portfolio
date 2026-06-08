@@ -27732,8 +27732,8 @@ const NAV_LINKS = [
         "Projects"
     ],
     [
-        "writing",
-        "Writing"
+        "troubleshooting",
+        "Troubleshooting"
     ], 
 ];
 function useScrollSpy(ids, offset = 96) {
@@ -30880,7 +30880,7 @@ function Contact({ data , onCopy  }) {
             className: "wrap",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.SectionMarker), {
-                    num: "06 —",
+                    num: "05 —",
                     label: "Contact"
                 }, void 0, false, {
                     fileName: "src/Components/footer.jsx",
