@@ -14,7 +14,7 @@ const NAV_LINKS = [
   ["career", "Career"],
   ["stack", "Stack"],
   ["projects", "Projects"],
-  ["writing", "Writing"],
+  ["troubleshooting", "Troubleshooting"],
 ];
 
 function useScrollSpy(ids, offset = 96) {

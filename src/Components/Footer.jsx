@@ -40,7 +40,7 @@ export function Contact({ data, onCopy }) {
   return (
     <section className="contact" id="contact" aria-labelledby="contact-h">
       <div className="wrap">
-        <SectionMarker num="06 —" label="Contact" />
+        <SectionMarker num="05 —" label="Contact" />
         <h2 id="contact-h">함께 풀고 싶은 문제가 있다면</h2>
         <p className="lead">
           백엔드·데이터 플랫폼 관련 제안을 환영합니다. 가장 빠른 연락은 이메일입니다.
