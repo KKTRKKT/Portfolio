@@ -27549,10 +27549,9 @@ function App() {
     });
     const tRef = (0, _react.useRef)(null);
     const copy = (text)=>{
-        const isResume = text.includes("이력서");
-        if (!isResume && navigator.clipboard) navigator.clipboard.writeText(text).catch(()=>{});
+        if (navigator.clipboard) navigator.clipboard.writeText(text).catch(()=>{});
         setToast({
-            msg: isResume ? "이력서 PDF 다운로드 (데모)" : "이메일 주소를 복사했습니다",
+            msg: "이메일 주소를 복사했습니다",
             show: true
         });
         clearTimeout(tRef.current);
@@ -27576,14 +27575,14 @@ function App() {
                 children: "본문으로 건너뛰기"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 365,
+                lineNumber: 361,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sections.Nav), {
                 onContact: goContact
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 366,
+                lineNumber: 362,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
@@ -27594,42 +27593,42 @@ function App() {
                         onContact: goContact
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 368,
+                        lineNumber: 364,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sections.About), {
                         data: DATA
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 369,
+                        lineNumber: 365,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sections.Career), {
                         data: DATA
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 370,
+                        lineNumber: 366,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sections.TechStack), {
                         data: DATA
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 371,
+                        lineNumber: 367,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projects.Projects), {
                         data: DATA
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 372,
+                        lineNumber: 368,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projects.Troubleshooting), {
                         data: DATA
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 373,
+                        lineNumber: 369,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footer.Contact), {
@@ -27637,18 +27636,18 @@ function App() {
                         onCopy: copy
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 375,
+                        lineNumber: 371,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 367,
+                lineNumber: 363,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footer.Footer), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 377,
+                lineNumber: 373,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Toast, {
@@ -27656,7 +27655,7 @@ function App() {
                 show: toast.show
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 378,
+                lineNumber: 374,
                 columnNumber: 7
             }, this)
         ]
@@ -30930,7 +30929,8 @@ function Contact({ data , onCopy  }) {
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
                             variant: "secondary",
                             icon: "download",
-                            onClick: ()=>onCopy("이력서 PDF"),
+                            onClick: ()=>window.print(),
+                            "aria-label": "이력서를 PDF로 저장",
                             children: "이력서 PDF"
                         }, void 0, false, {
                             fileName: "src/Components/footer.jsx",
@@ -30956,14 +30956,14 @@ function Contact({ data , onCopy  }) {
                                     size: 16
                                 }, void 0, false, {
                                     fileName: "src/Components/footer.jsx",
-                                    lineNumber: 65,
+                                    lineNumber: 70,
                                     columnNumber: 13
                                 }, this),
                                 "github.com/kktrkkt"
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/footer.jsx",
-                            lineNumber: 64,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -30981,20 +30981,20 @@ function Contact({ data , onCopy  }) {
                                     size: 16
                                 }, void 0, false, {
                                     fileName: "src/Components/footer.jsx",
-                                    lineNumber: 75,
+                                    lineNumber: 80,
                                     columnNumber: 13
                                 }, this),
                                 "맨 위로"
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/footer.jsx",
-                            lineNumber: 68,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/footer.jsx",
-                    lineNumber: 63,
+                    lineNumber: 68,
                     columnNumber: 9
                 }, this)
             ]
@@ -31021,7 +31021,7 @@ function Footer() {
                     children: "\xa9 2026 Sung Hyun Lee"
                 }, void 0, false, {
                     fileName: "src/Components/footer.jsx",
-                    lineNumber: 88,
+                    lineNumber: 93,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31029,18 +31029,18 @@ function Footer() {
                     children: "Built with Pretendard \xb7 IBM Plex Mono"
                 }, void 0, false, {
                     fileName: "src/Components/footer.jsx",
-                    lineNumber: 89,
+                    lineNumber: 94,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/Components/footer.jsx",
-            lineNumber: 87,
+            lineNumber: 92,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Components/footer.jsx",
-        lineNumber: 86,
+        lineNumber: 91,
         columnNumber: 5
     }, this);
 }

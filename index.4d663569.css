@@ -1169,4 +1169,86 @@ button {
   top: 8px;
 }
 
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  html, body {
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  .nav, .skip-link, .toast, .hero-cta, .hero-grid, .cursor, .contact-actions, .contact-meta {
+    display: none !important;
+  }
+
+  .section {
+    break-inside: auto;
+    border-top: 1px solid #ddd !important;
+    padding: 18px 0 !important;
+  }
+
+  .hero {
+    padding-top: 0 !important;
+    padding-bottom: 18px !important;
+  }
+
+  .wrap {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  h1, h2 {
+    color: #000 !important;
+  }
+
+  .lead, p, .role, .sub, .stack-line {
+    color: #111 !important;
+  }
+
+  .case {
+    opacity: 1 !important;
+    grid-template-rows: 1fr !important;
+  }
+
+  .case-clip {
+    overflow: visible !important;
+  }
+
+  .proj-card {
+    break-inside: avoid;
+    cursor: default !important;
+    padding-left: 0 !important;
+  }
+
+  .proj-card .chev {
+    display: none !important;
+  }
+
+  .cv-group, .stack-cell, .ts-row, .metric, .case-block, .decision {
+    break-inside: avoid;
+  }
+
+  h2, h3 {
+    break-after: avoid;
+  }
+
+  [class*="reveal"], .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    color: #555;
+    font-size: 10px;
+  }
+
+  a[href^="mailto"]:after, a[href^="#"]:after {
+    content: "";
+  }
+}
+
 /*# sourceMappingURL=index.4d663569.css.map */
