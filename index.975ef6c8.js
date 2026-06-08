@@ -27097,7 +27097,7 @@ const DATA = {
     role: "Backend Engineer \xb7 Data Platform & Enterprise Systems",
     email: "paulhana6006@gmail.com",
     github: "https://github.com/kktrkkt",
-    lead: "연구 데이터 플랫폼과 공공 정산 시스템을 만들며, 측정 가능한 안정성과 일하는 방식을 바꾸는 자동화에 집중해 왔습니다. 좋은 소프트웨어는 조직이 일하는 방식을 근본적으로 바꿀 수 있다고 믿습니다.",
+    lead: "연구 데이터 플랫폼\xb7공공 정산 시스템을 만들어 온 백엔드 개발자입니다. KISTI에서는 9개 모듈 MSA의 일부를 맡아 개발\xb7운영했고(MAU 4K→40K, 2년), 커미조아\xb7수자원공사 프로젝트에서는 통계 풀스캔과 수기 회계 같은 실무 병목을 줄이는 일을 했습니다. 사이드 프로젝트 COIP에서는 GKE 배포\xb7CI/CD를 직접 다뤄보며 운영 관점을 보완하고 있습니다.",
     stackLine: "Spring Boot \xb7 JPA/QueryDSL \xb7 iRODS \xb7 PostgreSQL \xb7 Docker \xb7 Grafana",
     metrics: [
         {
@@ -27111,14 +27111,14 @@ const DATA = {
             cap: "iRODS 분산 저장 \xb7 200만+ 건"
         },
         {
-            value: "99.9",
-            unit: "%",
-            cap: "연간 가용성 \xb7 중대장애 0건"
+            value: "8,000",
+            unit: "+",
+            cap: "OpenAPI 외부기관 활용 (KISTI)"
         }, 
     ],
     about: [
-        "KISTI 과학기술 AI 데이터 공유\xb7활용 서비스, 커미조아 품질 전산화, 수자원공사 REC 통합관리 시스템을 만들며 연구 데이터 플랫폼과 공공\xb7제조 도메인의 백엔드를 설계해 왔습니다.",
-        "복잡한 업무 프로세스를 단순화하고 데이터를 기반으로 의사결정을 가능하게 하는 시스템을 만듭니다. Docker 기반 MSA로 9개 모듈을 분리해 가용성을 확보하고, QueryDSL\xb7Spring Cache로 통계 화면을 즉시 응답으로 바꾸고, SAP 양방향 연동으로 회계 자동화를 만들어 왔습니다.",
+        "KISTI 과학기술 AI 데이터 공유\xb7활용 서비스, 커미조아 품질 전산화, 수자원공사 REC 통합관리 시스템을 만들며 연구 데이터 플랫폼과 공공\xb7제조 도메인의 백엔드를 개발해 왔습니다.",
+        "복잡한 업무 프로세스를 단순화하고 데이터를 기반으로 의사결정을 가능하게 하는 시스템을 만듭니다. KISTI에서는 Docker 기반 9개 모듈 MSA 환경에서 일부 모듈의 개발\xb7운영을 맡았고, QueryDSL\xb7Spring Cache로 통계 화면을 즉시 응답으로 바꾸고, SAP 양방향 연동으로 회계 자동화를 만들어 왔습니다.",
         "사이드 프로젝트 COIP에서는 GKE 위에 HPA\xb7PDB\xb7PgBouncer\xb7Jenkins+Kaniko+Trivy 파이프라인을 직접 운영하며, K8S\xb7CI/CD\xb7비용 최적화를 코드 옆에서 함께 다루는 방식을 익히고 있습니다.", 
     ],
     strengths: [
@@ -27127,7 +27127,7 @@ const DATA = {
             d: "iRODS \xb7 6TB \xb7 200만+ 건"
         },
         {
-            t: "MSA 모듈 설계",
+            t: "MSA 모듈 개발",
             d: "Docker \xb7 9 modules"
         },
         {
@@ -27135,8 +27135,59 @@ const DATA = {
             d: "SAP \xb7 RPA"
         },
         {
-            t: "K8S 운영 \xb7 CI/CD",
+            t: "K8S 배포\xb7CI/CD 경험",
             d: "GKE \xb7 PgBouncer \xb7 Kaniko"
+        }, 
+    ],
+    career: [
+        {
+            cat: "경력",
+            icon: "server",
+            items: [
+                {
+                    org: "(주)알투소프트",
+                    role: "대리 \xb7 SI 개발",
+                    period: "2020.03 — 2025.12"
+                }, 
+            ]
+        },
+        {
+            cat: "교육",
+            icon: "layers",
+            items: [
+                {
+                    org: "SSAFY \xb7 삼성전자",
+                    role: "마이스터고 트랙",
+                    period: "2026.01 — 2027.01"
+                }, 
+            ]
+        },
+        {
+            cat: "학력",
+            icon: "git-branch",
+            items: [
+                {
+                    org: "대덕SW마이스터고",
+                    role: "소프트웨어개발과",
+                    period: "2017.03 — 2020.01"
+                }, 
+            ]
+        },
+        {
+            cat: "수상 \xb7 자격",
+            icon: "zap",
+            items: [
+                {
+                    org: "삼성SW 역량평가 A+",
+                    role: "삼성전자",
+                    period: "2026.02"
+                },
+                {
+                    org: "정보처리기사",
+                    role: "한국산업인력공단",
+                    period: "2024.06"
+                }, 
+            ]
         }, 
     ],
     stack: [
@@ -27266,6 +27317,63 @@ const DATA = {
             ]
         },
         {
+            id: "kisti",
+            title: "KISTI 과학기술 AI 데이터 공유\xb7활용 서비스",
+            one: "연구자가 대규모 데이터셋\xb7모델을 안정적으로 저장\xb7검색\xb7활용할 수 있도록 iRODS 기반 데이터 댐과 9개 모듈 MSA 환경에서 SAML2 SSO 통합 모듈(kafe)을 비롯한 일부 모듈의 개발\xb7운영을 맡았습니다. (2022.06–2023.11)",
+            tags: [
+                "Spring Boot 2.5",
+                "JPA",
+                "PostgreSQL 14",
+                "Redis 6",
+                "iRODS",
+                "Solr",
+                "Docker (MSA)",
+                "Prometheus \xb7 Grafana", 
+            ],
+            problem: "연구 데이터 공유\xb7활용 수요는 늘었지만 AI 연구자가 활용할 인프라가 부족했습니다. 대규모 비정형 데이터를 안정적으로 저장\xb7관리하고, 다기관 사용자에게 권한 기반으로 제공해야 했습니다.",
+            architecture: "iRODS Cluster 3 servers를 데이터 댐으로 두고, Tomcat 9개 모듈(common \xb7 adm \xb7 user \xb7 kafe \xb7 serv \xb7 sftp \xb7 openapi \xb7 competition \xb7 wordpressClient)로 분리한 Docker 기반 MSA를 구축했습니다. 인증은 Spring Security SAML2 + Redis 세션으로 일원화하고, Prometheus\xb7Grafana로 운영을 가시화했습니다.",
+            decisions: [
+                {
+                    k: "iRODS + davrods/sftp 분리",
+                    v: "6TB\xb7200만+ 건 비정형 데이터의 분산 저장과 권한 일관성 확보"
+                },
+                {
+                    k: "9개 모듈 MSA (Docker)",
+                    v: "관리자\xb7사용자\xb7OpenAPI\xb7경진대회를 독립 배포 단위로 분리해 영향 범위 최소화"
+                },
+                {
+                    k: "SAML2 + Redis 세션",
+                    v: "다기관 사용자 인증을 SSO로 일원화 (kafe 모듈)"
+                },
+                {
+                    k: "Solr + DOI + OpenAPI",
+                    v: "검색\xb7외부 인용\xb7재사용 채널을 한 번에 — 학술적 인용 가능 구조"
+                }, 
+            ],
+            trouble: {
+                cause: "초기 모놀리식 구조로 기능 결합도가 높아 배포 단위가 크고, 다기관 사용자 인증이 분산되어 있었습니다.",
+                fix: "도메인별로 9개 Tomcat 모듈로 분리해 Docker 기반 MSA로 재구성하고, Spring Security SAML2 + Redis 세션으로 SSO를 일원화했습니다.",
+                result: "9개 모듈 MSA 환경에서 안정적으로 운영, MAU 4,000 → 40,000 (2년 10\xd7)."
+            },
+            results: [
+                {
+                    pre: "\xd7",
+                    value: "10",
+                    cap: "MAU 4K → 40K \xb7 2년"
+                },
+                {
+                    value: "9",
+                    unit: "모듈",
+                    cap: "Tomcat MSA 환경 운영"
+                },
+                {
+                    value: "8,000",
+                    unit: "+",
+                    cap: "OpenAPI 외부기관 활용"
+                }, 
+            ]
+        },
+        {
             id: "comezoa",
             title: "커미조아 품질 전산화 시스템",
             one: "엑셀\xb7수기\xb7스캔으로 흩어져 있던 품질 관리대장을 전산화하고, 통계 산출 시간을 하루+에서 즉시로 단축했습니다. (2025.05–2025.07)",
@@ -27373,71 +27481,20 @@ const DATA = {
                     cap: "재무 시스템 양방향 연동"
                 }, 
             ]
-        },
-        {
-            id: "kisti",
-            title: "KISTI 과학기술 AI 데이터 공유\xb7활용 서비스",
-            one: "연구자가 대규모 데이터셋\xb7모델을 안정적으로 저장\xb7검색\xb7활용할 수 있도록 iRODS 기반 데이터 댐과 9개 모듈 MSA를 설계\xb7구축했습니다. (2022.06–2023.11)",
-            tags: [
-                "Spring Boot 2.5",
-                "JPA",
-                "PostgreSQL 14",
-                "Redis 6",
-                "iRODS",
-                "Solr",
-                "Docker (MSA)",
-                "Prometheus \xb7 Grafana", 
-            ],
-            problem: "연구 데이터 공유\xb7활용 수요는 늘었지만 AI 연구자가 활용할 인프라가 부족했습니다. 대규모 비정형 데이터를 안정적으로 저장\xb7관리하고, 다기관 사용자에게 권한 기반으로 제공해야 했습니다.",
-            architecture: "iRODS Cluster 3 servers를 데이터 댐으로 두고, Tomcat 9개 모듈(common \xb7 adm \xb7 user \xb7 kafe \xb7 serv \xb7 sftp \xb7 openapi \xb7 competition \xb7 wordpressClient)로 분리한 Docker 기반 MSA를 구축했습니다. 인증은 Spring Security SAML2 + Redis 세션으로 일원화하고, Prometheus\xb7Grafana로 운영을 가시화했습니다.",
-            decisions: [
-                {
-                    k: "iRODS + davrods/sftp 분리",
-                    v: "6TB\xb7200만+ 건 비정형 데이터의 분산 저장과 권한 일관성 확보"
-                },
-                {
-                    k: "9개 모듈 MSA (Docker)",
-                    v: "관리자\xb7사용자\xb7OpenAPI\xb7경진대회를 독립 배포 단위로 분리해 영향 범위 최소화"
-                },
-                {
-                    k: "SAML2 + Redis 세션",
-                    v: "다기관 사용자 인증을 SSO로 일원화 (kafe 모듈)"
-                },
-                {
-                    k: "Solr + DOI + OpenAPI",
-                    v: "검색\xb7외부 인용\xb7재사용 채널을 한 번에 — 학술적 인용 가능 구조"
-                }, 
-            ],
-            trouble: {
-                cause: "초기 모놀리식 구조로 기능 결합도가 높아 배포 단위가 크고, 다기관 사용자 인증이 분산되어 있었습니다.",
-                fix: "도메인별로 9개 Tomcat 모듈로 분리해 Docker 기반 MSA로 재구성하고, Spring Security SAML2 + Redis 세션으로 SSO를 일원화했습니다.",
-                result: "연간 가용성 99.9% 유지, 중대 장애 0건, MAU 4,000 → 40,000 (2년 10\xd7)."
-            },
-            results: [
-                {
-                    pre: "\xd7",
-                    value: "10",
-                    cap: "MAU 4K → 40K \xb7 2년"
-                },
-                {
-                    value: "99.9",
-                    unit: "%",
-                    cap: "가용성 \xb7 중대장애 0"
-                },
-                {
-                    value: "8,000",
-                    unit: "+",
-                    cap: "OpenAPI 외부기관 활용"
-                }, 
-            ]
         }, 
     ],
     troubleshooting: [
         {
-            title: "모놀리식 구조의 배포\xb7운영 부담 (KISTI)",
-            cause: "단일 was로 기능 결합도가 높아 배포 단위가 크고 장애 영향 범위가 넓었습니다.",
-            fix: "도메인별 9개 Tomcat 모듈로 분리해 Docker 기반 MSA로 재구성, iRODS Cluster 3 servers로 데이터 계층을 분리.",
-            result: "연간 가용성 99.9%, 중대장애 0건, MAU 2년 10\xd7."
+            title: "K8S Pod 확장 시 DB 커넥션 고갈 (COIP)",
+            cause: "HPA로 Pod이 늘수록 각 Pod의 독립 풀이 합산되어 PostgreSQL max_connections에 빠르게 도달, 트래픽 스파이크 구간에서 5xx 다발.",
+            fix: "PgBouncer를 transaction mode(pool_size=25)로 배치해 풀 관리를 한 계층으로 집약, 짧은 트랜잭션을 다수 클라이언트가 공유하도록 재구성.",
+            result: "동일 부하에서 커넥션 점유 5xx 사실상 제거, max_connections 증설 없이 Pod 수 확장 가능."
+        },
+        {
+            title: "다기관 사용자 인증\xb7세션 분산 (KISTI)",
+            cause: "다기관 연구자가 9개 모듈에 걸쳐 개별 로그인\xb7권한 컨텍스트를 갖고 있어, 사용자 경험과 운영\xb7감사 측면 모두에서 통합이 필요했습니다.",
+            fix: "SAML2 기반 SSO 통합 모듈 kafe를 직접 개발해 IdP 연동\xb7인증을 일원화하고, Redis 세션으로 9개 모듈 간 세션 컨텍스트를 공유했습니다.",
+            result: "다기관 사용자 인증을 단일 로그인으로 일원화, 9개 모듈 전반에 동일한 세션\xb7권한 컨텍스트 제공."
         },
         {
             title: "통계 페이지 풀스캔 지연 (커미조아)",
@@ -27456,12 +27513,6 @@ const DATA = {
             cause: "REC 발급량 급증에도 매매계약 검증\xb7회계전표\xb7외부기관 데이터 수급이 모두 수작업.",
             fix: "매매계약 → 회계전표 → 결재 원클릭 자동화 + SAP 양방향 연동 + 에너지공단\xb7전력거래소 RPA 수급.",
             result: "수동 다단계 → 원클릭, 외부기관 데이터 자동 수급, 회계 데이터 무결성 확보."
-        },
-        {
-            title: "K8S Pod 확장 시 DB 커넥션 고갈 (COIP)",
-            cause: "HPA로 Pod이 늘수록 각 Pod의 독립 풀이 합산되어 PostgreSQL max_connections에 빠르게 도달, 트래픽 스파이크 구간에서 5xx 다발.",
-            fix: "PgBouncer를 transaction mode(pool_size=25)로 배치해 풀 관리를 한 계층으로 집약, 짧은 트랜잭션을 다수 클라이언트가 공유하도록 재구성.",
-            result: "동일 부하에서 커넥션 점유 5xx 사실상 제거, max_connections 증설 없이 Pod 수 확장 가능."
         }, 
     ],
     writing: []
@@ -27478,14 +27529,14 @@ function Toast({ msg , show  }) {
                 size: 15
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 303,
+                lineNumber: 337,
                 columnNumber: 7
             }, this),
             msg
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 297,
+        lineNumber: 331,
         columnNumber: 5
     }, this);
 }
@@ -27525,14 +27576,14 @@ function App() {
                 children: "본문으로 건너뛰기"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 331,
+                lineNumber: 365,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sections.Nav), {
                 onContact: goContact
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 332,
+                lineNumber: 366,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
@@ -27543,42 +27594,42 @@ function App() {
                         onContact: goContact
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 334,
+                        lineNumber: 368,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sections.About), {
                         data: DATA
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 335,
+                        lineNumber: 369,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sections.Career), {
+                        data: DATA
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 370,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sections.TechStack), {
                         data: DATA
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 336,
+                        lineNumber: 371,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projects.Projects), {
                         data: DATA
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 337,
+                        lineNumber: 372,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projects.Troubleshooting), {
                         data: DATA
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 338,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footer.Writing), {
-                        data: DATA
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 339,
+                        lineNumber: 373,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footer.Contact), {
@@ -27586,18 +27637,18 @@ function App() {
                         onCopy: copy
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 340,
+                        lineNumber: 375,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 333,
+                lineNumber: 367,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footer.Footer), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 342,
+                lineNumber: 377,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Toast, {
@@ -27605,7 +27656,7 @@ function App() {
                 show: toast.show
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 343,
+                lineNumber: 378,
                 columnNumber: 7
             }, this)
         ]
@@ -27635,6 +27686,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Nav", ()=>Nav);
 parcelHelpers.export(exports, "Hero", ()=>Hero);
 parcelHelpers.export(exports, "About", ()=>About);
+parcelHelpers.export(exports, "Career", ()=>Career);
 parcelHelpers.export(exports, "TechStack", ()=>TechStack);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
@@ -27667,6 +27719,10 @@ const NAV_LINKS = [
     [
         "about",
         "About"
+    ],
+    [
+        "career",
+        "Career"
     ],
     [
         "stack",
@@ -27725,7 +27781,7 @@ function Nav({ onContact  }) {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Logo, {}, void 0, false, {
                     fileName: "src/Components/sections.jsx",
-                    lineNumber: 48,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27739,7 +27795,7 @@ function Nav({ onContact  }) {
                                 children: label
                             }, id, false, {
                                 fileName: "src/Components/sections.jsx",
-                                lineNumber: 51,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, this)),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27758,29 +27814,29 @@ function Nav({ onContact  }) {
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "src/Components/sections.jsx",
-                                lineNumber: 69,
+                                lineNumber: 70,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/Components/sections.jsx",
-                            lineNumber: 61,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/sections.jsx",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/Components/sections.jsx",
-            lineNumber: 47,
+            lineNumber: 48,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Components/sections.jsx",
-        lineNumber: 46,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }
@@ -27801,7 +27857,7 @@ function Hero({ data , onContact  }) {
                 "aria-hidden": "true"
             }, void 0, false, {
                 fileName: "src/Components/sections.jsx",
-                lineNumber: 82,
+                lineNumber: 83,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27812,7 +27868,7 @@ function Hero({ data , onContact  }) {
                         children: "Backend Engineer \xb7 Portfolio"
                     }, void 0, false, {
                         fileName: "src/Components/sections.jsx",
-                        lineNumber: 84,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -27821,7 +27877,7 @@ function Hero({ data , onContact  }) {
                             "서버는 조용해야",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                 fileName: "src/Components/sections.jsx",
-                                lineNumber: 86,
+                                lineNumber: 87,
                                 columnNumber: 19
                             }, this),
                             "합니다",
@@ -27830,13 +27886,13 @@ function Hero({ data , onContact  }) {
                                 "aria-hidden": "true"
                             }, void 0, false, {
                                 fileName: "src/Components/sections.jsx",
-                                lineNumber: 87,
+                                lineNumber: 88,
                                 columnNumber: 14
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/sections.jsx",
-                        lineNumber: 85,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27844,7 +27900,7 @@ function Hero({ data , onContact  }) {
                         children: data.role
                     }, void 0, false, {
                         fileName: "src/Components/sections.jsx",
-                        lineNumber: 89,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27852,7 +27908,7 @@ function Hero({ data , onContact  }) {
                         children: data.lead
                     }, void 0, false, {
                         fileName: "src/Components/sections.jsx",
-                        lineNumber: 90,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27860,7 +27916,7 @@ function Hero({ data , onContact  }) {
                         children: data.stackLine
                     }, void 0, false, {
                         fileName: "src/Components/sections.jsx",
-                        lineNumber: 91,
+                        lineNumber: 92,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27873,7 +27929,7 @@ function Hero({ data , onContact  }) {
                                 children: "이메일 보내기"
                             }, void 0, false, {
                                 fileName: "src/Components/sections.jsx",
-                                lineNumber: 93,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Button), {
@@ -27883,13 +27939,13 @@ function Hero({ data , onContact  }) {
                                 children: "GitHub"
                             }, void 0, false, {
                                 fileName: "src/Components/sections.jsx",
-                                lineNumber: 96,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/sections.jsx",
-                        lineNumber: 92,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27898,24 +27954,24 @@ function Hero({ data , onContact  }) {
                                 ...m
                             }, i, false, {
                                 fileName: "src/Components/sections.jsx",
-                                lineNumber: 106,
+                                lineNumber: 107,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "src/Components/sections.jsx",
-                        lineNumber: 104,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/sections.jsx",
-                lineNumber: 83,
+                lineNumber: 84,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/Components/sections.jsx",
-        lineNumber: 81,
+        lineNumber: 82,
         columnNumber: 5
     }, this);
 }
@@ -27933,7 +27989,7 @@ function About({ data  }) {
                     label: "About"
                 }, void 0, false, {
                     fileName: "src/Components/sections.jsx",
-                    lineNumber: 118,
+                    lineNumber: 119,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27945,12 +28001,12 @@ function About({ data  }) {
                                     children: p
                                 }, i, false, {
                                     fileName: "src/Components/sections.jsx",
-                                    lineNumber: 122,
+                                    lineNumber: 123,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "src/Components/sections.jsx",
-                            lineNumber: 120,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Reveal), {
@@ -27963,7 +28019,7 @@ function About({ data  }) {
                                             children: String(i + 1).padStart(2, "0")
                                         }, void 0, false, {
                                             fileName: "src/Components/sections.jsx",
-                                            lineNumber: 130,
+                                            lineNumber: 131,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27971,7 +28027,7 @@ function About({ data  }) {
                                             children: s.t
                                         }, void 0, false, {
                                             fileName: "src/Components/sections.jsx",
-                                            lineNumber: 131,
+                                            lineNumber: 132,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27979,39 +28035,170 @@ function About({ data  }) {
                                             children: s.d
                                         }, void 0, false, {
                                             fileName: "src/Components/sections.jsx",
-                                            lineNumber: 132,
+                                            lineNumber: 133,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "src/Components/sections.jsx",
-                                    lineNumber: 129,
+                                    lineNumber: 130,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "src/Components/sections.jsx",
-                            lineNumber: 127,
+                            lineNumber: 128,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/sections.jsx",
-                    lineNumber: 119,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/Components/sections.jsx",
-            lineNumber: 117,
+            lineNumber: 118,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Components/sections.jsx",
-        lineNumber: 116,
+        lineNumber: 117,
         columnNumber: 5
     }, this);
 }
 _c3 = About;
+function Career({ data  }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "section",
+        id: "career",
+        "aria-labelledby": "career-h",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "wrap",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.SectionMarker), {
+                    num: "02 —",
+                    label: "Career & Education"
+                }, void 0, false, {
+                    fileName: "src/Components/sections.jsx",
+                    lineNumber: 147,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    id: "career-h",
+                    children: "이력"
+                }, void 0, false, {
+                    fileName: "src/Components/sections.jsx",
+                    lineNumber: 148,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "sub",
+                    children: "현장에서 시스템을 만들고, 계속 배우며 검증해 왔습니다."
+                }, void 0, false, {
+                    fileName: "src/Components/sections.jsx",
+                    lineNumber: 149,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "cv",
+                    style: {
+                        marginTop: 32
+                    },
+                    children: data.career.map((g)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Reveal), {
+                            className: "cv-group",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "cv-cat",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Icon), {
+                                            name: g.icon,
+                                            size: 15
+                                        }, void 0, false, {
+                                            fileName: "src/Components/sections.jsx",
+                                            lineNumber: 154,
+                                            columnNumber: 17
+                                        }, this),
+                                        g.cat
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/sections.jsx",
+                                    lineNumber: 153,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "cv-items",
+                                    children: g.items.map((it, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "cv-row",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "cv-main",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "cv-org",
+                                                            children: it.org
+                                                        }, void 0, false, {
+                                                            fileName: "src/Components/sections.jsx",
+                                                            lineNumber: 161,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "cv-role",
+                                                            children: it.role
+                                                        }, void 0, false, {
+                                                            fileName: "src/Components/sections.jsx",
+                                                            lineNumber: 162,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/Components/sections.jsx",
+                                                    lineNumber: 160,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "cv-period",
+                                                    children: it.period
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/sections.jsx",
+                                                    lineNumber: 164,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, i, true, {
+                                            fileName: "src/Components/sections.jsx",
+                                            lineNumber: 159,
+                                            columnNumber: 19
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "src/Components/sections.jsx",
+                                    lineNumber: 157,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, g.cat, true, {
+                            fileName: "src/Components/sections.jsx",
+                            lineNumber: 152,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "src/Components/sections.jsx",
+                    lineNumber: 150,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/Components/sections.jsx",
+            lineNumber: 146,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "src/Components/sections.jsx",
+        lineNumber: 145,
+        columnNumber: 5
+    }, this);
+}
+_c4 = Career;
 function TechStack({ data  }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "section",
@@ -28021,11 +28208,11 @@ function TechStack({ data  }) {
             className: "wrap",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.SectionMarker), {
-                    num: "02 —",
+                    num: "03 —",
                     label: "Tech Stack"
                 }, void 0, false, {
                     fileName: "src/Components/sections.jsx",
-                    lineNumber: 146,
+                    lineNumber: 180,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _ui.Reveal), {
@@ -28041,14 +28228,14 @@ function TechStack({ data  }) {
                                             size: 15
                                         }, void 0, false, {
                                             fileName: "src/Components/sections.jsx",
-                                            lineNumber: 151,
+                                            lineNumber: 185,
                                             columnNumber: 17
                                         }, this),
                                         cat.cat
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/sections.jsx",
-                                    lineNumber: 150,
+                                    lineNumber: 184,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28058,44 +28245,45 @@ function TechStack({ data  }) {
                                             children: it
                                         }, it, false, {
                                             fileName: "src/Components/sections.jsx",
-                                            lineNumber: 156,
+                                            lineNumber: 190,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "src/Components/sections.jsx",
-                                    lineNumber: 154,
+                                    lineNumber: 188,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, cat.cat, true, {
                             fileName: "src/Components/sections.jsx",
-                            lineNumber: 149,
+                            lineNumber: 183,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "src/Components/sections.jsx",
-                    lineNumber: 147,
+                    lineNumber: 181,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/Components/sections.jsx",
-            lineNumber: 145,
+            lineNumber: 179,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Components/sections.jsx",
-        lineNumber: 144,
+        lineNumber: 178,
         columnNumber: 5
     }, this);
 }
-_c4 = TechStack;
-var _c, _c1, _c2, _c3, _c4;
+_c5 = TechStack;
+var _c, _c1, _c2, _c3, _c4, _c5;
 $RefreshReg$(_c, "Logo");
 $RefreshReg$(_c1, "Nav");
 $RefreshReg$(_c2, "Hero");
 $RefreshReg$(_c3, "About");
-$RefreshReg$(_c4, "TechStack");
+$RefreshReg$(_c4, "Career");
+$RefreshReg$(_c5, "TechStack");
 
   $parcel$ReactRefreshHelpers$cf72.postlude(module);
 } finally {
@@ -28936,7 +29124,7 @@ function Projects({ data  }) {
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     className: "sub",
-                    children: "문제 → 아키텍처 → 의사결정 → 트러블슈팅 → 정량 결과 순으로 정리했습니다. 카드를 눌러 펼쳐 보세요."
+                    children: "문제 → 아키텍처 → 의사결정 → 트러블슈팅 → 정량 결과 순으로 정리했습니다."
                 }, void 0, false, {
                     fileName: "src/Components/projects.jsx",
                     lineNumber: 115,
@@ -28954,12 +29142,12 @@ function Projects({ data  }) {
                             onToggle: ()=>setOpen(open === i ? -1 : i)
                         }, i, false, {
                             fileName: "src/Components/projects.jsx",
-                            lineNumber: 121,
+                            lineNumber: 120,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "src/Components/projects.jsx",
-                    lineNumber: 119,
+                    lineNumber: 118,
                     columnNumber: 9
                 }, this)
             ]
@@ -28989,7 +29177,7 @@ function Troubleshooting({ data  }) {
                     label: "Trouble-shooting Highlights"
                 }, void 0, false, {
                     fileName: "src/Components/projects.jsx",
-                    lineNumber: 139,
+                    lineNumber: 138,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -28997,7 +29185,7 @@ function Troubleshooting({ data  }) {
                     children: "장애를 줄인 결정들"
                 }, void 0, false, {
                     fileName: "src/Components/projects.jsx",
-                    lineNumber: 140,
+                    lineNumber: 139,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -29005,7 +29193,7 @@ function Troubleshooting({ data  }) {
                     children: "프로젝트를 횡단하는 대표 사례입니다. 원인을 측정으로 좁히고, 재발을 막는 데까지 봅니다."
                 }, void 0, false, {
                     fileName: "src/Components/projects.jsx",
-                    lineNumber: 141,
+                    lineNumber: 140,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29021,7 +29209,7 @@ function Troubleshooting({ data  }) {
                                     children: String(i + 1).padStart(2, "0")
                                 }, void 0, false, {
                                     fileName: "src/Components/projects.jsx",
-                                    lineNumber: 147,
+                                    lineNumber: 146,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29030,7 +29218,7 @@ function Troubleshooting({ data  }) {
                                             children: t.title
                                         }, void 0, false, {
                                             fileName: "src/Components/projects.jsx",
-                                            lineNumber: 149,
+                                            lineNumber: 148,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29044,7 +29232,7 @@ function Troubleshooting({ data  }) {
                                                             children: "원인"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/projects.jsx",
-                                                            lineNumber: 152,
+                                                            lineNumber: 151,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29052,13 +29240,13 @@ function Troubleshooting({ data  }) {
                                                             children: t.cause
                                                         }, void 0, false, {
                                                             fileName: "src/Components/projects.jsx",
-                                                            lineNumber: 153,
+                                                            lineNumber: 152,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/projects.jsx",
-                                                    lineNumber: 151,
+                                                    lineNumber: 150,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29069,7 +29257,7 @@ function Troubleshooting({ data  }) {
                                                             children: "해결"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/projects.jsx",
-                                                            lineNumber: 156,
+                                                            lineNumber: 155,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29077,13 +29265,13 @@ function Troubleshooting({ data  }) {
                                                             children: t.fix
                                                         }, void 0, false, {
                                                             fileName: "src/Components/projects.jsx",
-                                                            lineNumber: 157,
+                                                            lineNumber: 156,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/projects.jsx",
-                                                    lineNumber: 155,
+                                                    lineNumber: 154,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29094,7 +29282,7 @@ function Troubleshooting({ data  }) {
                                                             children: "결과"
                                                         }, void 0, false, {
                                                             fileName: "src/Components/projects.jsx",
-                                                            lineNumber: 160,
+                                                            lineNumber: 159,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29102,47 +29290,47 @@ function Troubleshooting({ data  }) {
                                                             children: t.result
                                                         }, void 0, false, {
                                                             fileName: "src/Components/projects.jsx",
-                                                            lineNumber: 161,
+                                                            lineNumber: 160,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/Components/projects.jsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 158,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/projects.jsx",
-                                            lineNumber: 150,
+                                            lineNumber: 149,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/projects.jsx",
-                                    lineNumber: 148,
+                                    lineNumber: 147,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, i, true, {
                             fileName: "src/Components/projects.jsx",
-                            lineNumber: 146,
+                            lineNumber: 145,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "src/Components/projects.jsx",
-                    lineNumber: 144,
+                    lineNumber: 143,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/Components/projects.jsx",
-            lineNumber: 138,
+            lineNumber: 137,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "src/Components/projects.jsx",
-        lineNumber: 137,
+        lineNumber: 136,
         columnNumber: 5
     }, this);
 }

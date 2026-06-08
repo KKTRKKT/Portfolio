@@ -510,6 +510,86 @@ button {
   margin-left: auto;
 }
 
+.cv {
+  flex-direction: column;
+  display: flex;
+}
+
+.cv-group {
+  border-top: 1px solid var(--line);
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  padding: 22px 0;
+  display: grid;
+}
+
+.cv-group:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 680px) {
+  .cv-group {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+.cv-cat {
+  font-family: var(--font-mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  align-items: center;
+  gap: 9px;
+  padding-top: 3px;
+  font-size: 12px;
+  display: flex;
+}
+
+.cv-cat .icn {
+  color: var(--accent);
+}
+
+.cv-items {
+  flex-direction: column;
+  gap: 14px;
+  display: flex;
+}
+
+.cv-row {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 18px;
+  display: flex;
+}
+
+.cv-main {
+  flex-direction: column;
+  gap: 3px;
+  display: flex;
+}
+
+.cv-org {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cv-role {
+  color: var(--ink-2);
+  font-size: 14px;
+}
+
+.cv-period {
+  font-family: var(--font-mono);
+  color: var(--ink-3);
+  letter-spacing: .02em;
+  white-space: nowrap;
+  font-feature-settings: "tnum" 1;
+  font-size: 13px;
+}
+
 .stack-grid {
   background: var(--line);
   border: 1px solid var(--line);
