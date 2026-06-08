@@ -113,8 +113,7 @@ export function Projects({ data }) {
         <SectionMarker num="03 —" label="Projects" />
         <h2 id="projects-h">케이스 스터디</h2>
         <p className="sub">
-          문제 → 아키텍처 → 의사결정 → 트러블슈팅 → 정량 결과 순으로 정리했습니다. 카드를 눌러 펼쳐
-          보세요.
+          문제 → 아키텍처 → 의사결정 → 트러블슈팅 → 정량 결과 순으로 정리했습니다.
         </p>
         <div className="proj-list" style={{ marginTop: 32 }}>
           {data.projects.map((p, i) => (

@@ -56,7 +56,12 @@ export function Contact({ data, onCopy }) {
           <Button variant="secondary" icon="copy" onClick={() => onCopy(data.email)}>
             복사
           </Button>
-          <Button variant="secondary" icon="download" onClick={() => onCopy("이력서 PDF")}>
+          <Button
+            variant="secondary"
+            icon="download"
+            onClick={() => window.print()}
+            aria-label="이력서를 PDF로 저장"
+          >
             이력서 PDF
           </Button>
         </div>

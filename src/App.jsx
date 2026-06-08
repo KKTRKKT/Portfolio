@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-import { About, Hero, Nav, TechStack } from "./Components/sections";
+import { About, Career, Hero, Nav, TechStack } from "./Components/sections";
 import { Projects, Troubleshooting } from "./Components/projects";
 import { Contact, Footer, Writing } from "./Components/footer";
 import { Icon } from "./Components/ui";
@@ -12,25 +12,57 @@ const DATA = {
   role: "Backend Engineer · Data Platform & Enterprise Systems",
   email: "paulhana6006@gmail.com",
   github: "https://github.com/kktrkkt",
-  lead: "연구 데이터 플랫폼과 공공 정산 시스템을 만들며, 측정 가능한 안정성과 일하는 방식을 바꾸는 자동화에 집중해 왔습니다. 좋은 소프트웨어는 조직이 일하는 방식을 근본적으로 바꿀 수 있다고 믿습니다.",
+  lead: "연구 데이터 플랫폼·공공 정산 시스템을 만들어 온 백엔드 개발자입니다. KISTI에서는 9개 모듈 MSA의 일부를 맡아 개발·운영했고(MAU 4K→40K, 2년), 커미조아·수자원공사 프로젝트에서는 통계 풀스캔과 수기 회계 같은 실무 병목을 줄이는 일을 했습니다. 사이드 프로젝트 COIP에서는 GKE 배포·CI/CD를 직접 다뤄보며 운영 관점을 보완하고 있습니다.",
   stackLine: "Spring Boot · JPA/QueryDSL · iRODS · PostgreSQL · Docker · Grafana",
 
   metrics: [
     { pre: "×", value: "10", cap: "MAU 4K → 40K · 2년 (KISTI)" },
     { value: "6,000", unit: "GB", cap: "iRODS 분산 저장 · 200만+ 건" },
-    { value: "99.9", unit: "%", cap: "연간 가용성 · 중대장애 0건" },
+    { value: "8,000", unit: "+", cap: "OpenAPI 외부기관 활용 (KISTI)" },
   ],
 
   about: [
-    "KISTI 과학기술 AI 데이터 공유·활용 서비스, 커미조아 품질 전산화, 수자원공사 REC 통합관리 시스템을 만들며 연구 데이터 플랫폼과 공공·제조 도메인의 백엔드를 설계해 왔습니다.",
-    "복잡한 업무 프로세스를 단순화하고 데이터를 기반으로 의사결정을 가능하게 하는 시스템을 만듭니다. Docker 기반 MSA로 9개 모듈을 분리해 가용성을 확보하고, QueryDSL·Spring Cache로 통계 화면을 즉시 응답으로 바꾸고, SAP 양방향 연동으로 회계 자동화를 만들어 왔습니다.",
+    "KISTI 과학기술 AI 데이터 공유·활용 서비스, 커미조아 품질 전산화, 수자원공사 REC 통합관리 시스템을 만들며 연구 데이터 플랫폼과 공공·제조 도메인의 백엔드를 개발해 왔습니다.",
+    "복잡한 업무 프로세스를 단순화하고 데이터를 기반으로 의사결정을 가능하게 하는 시스템을 만듭니다. KISTI에서는 Docker 기반 9개 모듈 MSA 환경에서 일부 모듈의 개발·운영을 맡았고, QueryDSL·Spring Cache로 통계 화면을 즉시 응답으로 바꾸고, SAP 양방향 연동으로 회계 자동화를 만들어 왔습니다.",
     "사이드 프로젝트 COIP에서는 GKE 위에 HPA·PDB·PgBouncer·Jenkins+Kaniko+Trivy 파이프라인을 직접 운영하며, K8S·CI/CD·비용 최적화를 코드 옆에서 함께 다루는 방식을 익히고 있습니다.",
   ],
   strengths: [
     { t: "데이터 플랫폼", d: "iRODS · 6TB · 200만+ 건" },
-    { t: "MSA 모듈 설계", d: "Docker · 9 modules" },
+    { t: "MSA 모듈 개발", d: "Docker · 9 modules" },
     { t: "엔터프라이즈 자동화", d: "SAP · RPA" },
-    { t: "K8S 운영 · CI/CD", d: "GKE · PgBouncer · Kaniko" },
+    { t: "K8S 배포·CI/CD 경험", d: "GKE · PgBouncer · Kaniko" },
+  ],
+
+  career: [
+    {
+      cat: "경력",
+      icon: "server",
+      items: [
+        { org: "(주)알투소프트", role: "대리 · SI 개발", period: "2020.03 — 2025.12" },
+      ],
+    },
+    {
+      cat: "교육",
+      icon: "layers",
+      items: [
+        { org: "SSAFY · 삼성전자", role: "마이스터고 트랙", period: "2026.01 — 2027.01" },
+      ],
+    },
+    {
+      cat: "학력",
+      icon: "git-branch",
+      items: [
+        { org: "대덕SW마이스터고", role: "소프트웨어개발과", period: "2017.03 — 2020.01" },
+      ],
+    },
+    {
+      cat: "수상 · 자격",
+      icon: "zap",
+      items: [
+        { org: "삼성SW 역량평가 A+", role: "삼성전자", period: "2026.02" },
+        { org: "정보처리기사", role: "한국산업인력공단", period: "2024.06" },
+      ],
+    },
   ],
 
   stack: [
@@ -109,6 +141,54 @@ const DATA = {
         { value: "60", unit: "%", cap: "staging 비용 절감 · Spot+CronJob" },
         { value: "0", cap: "운영 다운타임 · PDB+롤링" },
         { value: "Pod ↑", cap: "PgBouncer · 동시성 한도 확장" },
+      ],
+    },
+    {
+      id: "kisti",
+      title: "KISTI 과학기술 AI 데이터 공유·활용 서비스",
+      one: "연구자가 대규모 데이터셋·모델을 안정적으로 저장·검색·활용할 수 있도록 iRODS 기반 데이터 댐과 9개 모듈 MSA 환경에서 SAML2 SSO 통합 모듈(kafe)을 비롯한 일부 모듈의 개발·운영을 맡았습니다. (2022.06–2023.11)",
+      tags: [
+        "Spring Boot 2.5",
+        "JPA",
+        "PostgreSQL 14",
+        "Redis 6",
+        "iRODS",
+        "Solr",
+        "Docker (MSA)",
+        "Prometheus · Grafana",
+      ],
+      problem:
+        "연구 데이터 공유·활용 수요는 늘었지만 AI 연구자가 활용할 인프라가 부족했습니다. 대규모 비정형 데이터를 안정적으로 저장·관리하고, 다기관 사용자에게 권한 기반으로 제공해야 했습니다.",
+      architecture:
+        "iRODS Cluster 3 servers를 데이터 댐으로 두고, Tomcat 9개 모듈(common · adm · user · kafe · serv · sftp · openapi · competition · wordpressClient)로 분리한 Docker 기반 MSA를 구축했습니다. 인증은 Spring Security SAML2 + Redis 세션으로 일원화하고, Prometheus·Grafana로 운영을 가시화했습니다.",
+      decisions: [
+        {
+          k: "iRODS + davrods/sftp 분리",
+          v: "6TB·200만+ 건 비정형 데이터의 분산 저장과 권한 일관성 확보",
+        },
+        {
+          k: "9개 모듈 MSA (Docker)",
+          v: "관리자·사용자·OpenAPI·경진대회를 독립 배포 단위로 분리해 영향 범위 최소화",
+        },
+        {
+          k: "SAML2 + Redis 세션",
+          v: "다기관 사용자 인증을 SSO로 일원화 (kafe 모듈)",
+        },
+        {
+          k: "Solr + DOI + OpenAPI",
+          v: "검색·외부 인용·재사용 채널을 한 번에 — 학술적 인용 가능 구조",
+        },
+      ],
+      trouble: {
+        cause:
+          "초기 모놀리식 구조로 기능 결합도가 높아 배포 단위가 크고, 다기관 사용자 인증이 분산되어 있었습니다.",
+        fix: "도메인별로 9개 Tomcat 모듈로 분리해 Docker 기반 MSA로 재구성하고, Spring Security SAML2 + Redis 세션으로 SSO를 일원화했습니다.",
+        result: "9개 모듈 MSA 환경에서 안정적으로 운영, MAU 4,000 → 40,000 (2년 10×).",
+      },
+      results: [
+        { pre: "×", value: "10", cap: "MAU 4K → 40K · 2년" },
+        { value: "9", unit: "모듈", cap: "Tomcat MSA 환경 운영" },
+        { value: "8,000", unit: "+", cap: "OpenAPI 외부기관 활용" },
       ],
     },
     {
@@ -204,62 +284,24 @@ const DATA = {
         { value: "SAP", cap: "재무 시스템 양방향 연동" },
       ],
     },
-    {
-      id: "kisti",
-      title: "KISTI 과학기술 AI 데이터 공유·활용 서비스",
-      one: "연구자가 대규모 데이터셋·모델을 안정적으로 저장·검색·활용할 수 있도록 iRODS 기반 데이터 댐과 9개 모듈 MSA를 설계·구축했습니다. (2022.06–2023.11)",
-      tags: [
-        "Spring Boot 2.5",
-        "JPA",
-        "PostgreSQL 14",
-        "Redis 6",
-        "iRODS",
-        "Solr",
-        "Docker (MSA)",
-        "Prometheus · Grafana",
-      ],
-      problem:
-        "연구 데이터 공유·활용 수요는 늘었지만 AI 연구자가 활용할 인프라가 부족했습니다. 대규모 비정형 데이터를 안정적으로 저장·관리하고, 다기관 사용자에게 권한 기반으로 제공해야 했습니다.",
-      architecture:
-        "iRODS Cluster 3 servers를 데이터 댐으로 두고, Tomcat 9개 모듈(common · adm · user · kafe · serv · sftp · openapi · competition · wordpressClient)로 분리한 Docker 기반 MSA를 구축했습니다. 인증은 Spring Security SAML2 + Redis 세션으로 일원화하고, Prometheus·Grafana로 운영을 가시화했습니다.",
-      decisions: [
-        {
-          k: "iRODS + davrods/sftp 분리",
-          v: "6TB·200만+ 건 비정형 데이터의 분산 저장과 권한 일관성 확보",
-        },
-        {
-          k: "9개 모듈 MSA (Docker)",
-          v: "관리자·사용자·OpenAPI·경진대회를 독립 배포 단위로 분리해 영향 범위 최소화",
-        },
-        {
-          k: "SAML2 + Redis 세션",
-          v: "다기관 사용자 인증을 SSO로 일원화 (kafe 모듈)",
-        },
-        {
-          k: "Solr + DOI + OpenAPI",
-          v: "검색·외부 인용·재사용 채널을 한 번에 — 학술적 인용 가능 구조",
-        },
-      ],
-      trouble: {
-        cause:
-          "초기 모놀리식 구조로 기능 결합도가 높아 배포 단위가 크고, 다기관 사용자 인증이 분산되어 있었습니다.",
-        fix: "도메인별로 9개 Tomcat 모듈로 분리해 Docker 기반 MSA로 재구성하고, Spring Security SAML2 + Redis 세션으로 SSO를 일원화했습니다.",
-        result: "연간 가용성 99.9% 유지, 중대 장애 0건, MAU 4,000 → 40,000 (2년 10×).",
-      },
-      results: [
-        { pre: "×", value: "10", cap: "MAU 4K → 40K · 2년" },
-        { value: "99.9", unit: "%", cap: "가용성 · 중대장애 0" },
-        { value: "8,000", unit: "+", cap: "OpenAPI 외부기관 활용" },
-      ],
-    },
   ],
 
   troubleshooting: [
     {
-      title: "모놀리식 구조의 배포·운영 부담 (KISTI)",
-      cause: "단일 was로 기능 결합도가 높아 배포 단위가 크고 장애 영향 범위가 넓었습니다.",
-      fix: "도메인별 9개 Tomcat 모듈로 분리해 Docker 기반 MSA로 재구성, iRODS Cluster 3 servers로 데이터 계층을 분리.",
-      result: "연간 가용성 99.9%, 중대장애 0건, MAU 2년 10×.",
+      title: "K8S Pod 확장 시 DB 커넥션 고갈 (COIP)",
+      cause:
+        "HPA로 Pod이 늘수록 각 Pod의 독립 풀이 합산되어 PostgreSQL max_connections에 빠르게 도달, 트래픽 스파이크 구간에서 5xx 다발.",
+      fix: "PgBouncer를 transaction mode(pool_size=25)로 배치해 풀 관리를 한 계층으로 집약, 짧은 트랜잭션을 다수 클라이언트가 공유하도록 재구성.",
+      result:
+        "동일 부하에서 커넥션 점유 5xx 사실상 제거, max_connections 증설 없이 Pod 수 확장 가능.",
+    },
+    {
+      title: "다기관 사용자 인증·세션 분산 (KISTI)",
+      cause:
+        "다기관 연구자가 9개 모듈에 걸쳐 개별 로그인·권한 컨텍스트를 갖고 있어, 사용자 경험과 운영·감사 측면 모두에서 통합이 필요했습니다.",
+      fix: "SAML2 기반 SSO 통합 모듈 kafe를 직접 개발해 IdP 연동·인증을 일원화하고, Redis 세션으로 9개 모듈 간 세션 컨텍스트를 공유했습니다.",
+      result:
+        "다기관 사용자 인증을 단일 로그인으로 일원화, 9개 모듈 전반에 동일한 세션·권한 컨텍스트 제공.",
     },
     {
       title: "통계 페이지 풀스캔 지연 (커미조아)",
@@ -278,14 +320,6 @@ const DATA = {
       cause: "REC 발급량 급증에도 매매계약 검증·회계전표·외부기관 데이터 수급이 모두 수작업.",
       fix: "매매계약 → 회계전표 → 결재 원클릭 자동화 + SAP 양방향 연동 + 에너지공단·전력거래소 RPA 수급.",
       result: "수동 다단계 → 원클릭, 외부기관 데이터 자동 수급, 회계 데이터 무결성 확보.",
-    },
-    {
-      title: "K8S Pod 확장 시 DB 커넥션 고갈 (COIP)",
-      cause:
-        "HPA로 Pod이 늘수록 각 Pod의 독립 풀이 합산되어 PostgreSQL max_connections에 빠르게 도달, 트래픽 스파이크 구간에서 5xx 다발.",
-      fix: "PgBouncer를 transaction mode(pool_size=25)로 배치해 풀 관리를 한 계층으로 집약, 짧은 트랜잭션을 다수 클라이언트가 공유하도록 재구성.",
-      result:
-        "동일 부하에서 커넥션 점유 5xx 사실상 제거, max_connections 증설 없이 Pod 수 확장 가능.",
     },
   ],
 
@@ -310,14 +344,10 @@ function App() {
   const [toast, setToast] = useState({ msg: "", show: false });
   const tRef = useRef(null);
   const copy = (text) => {
-    const isResume = text.includes("이력서");
-    if (!isResume && navigator.clipboard) {
-      navigator.clipboard.writeText(text).catch(() => {});
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).catch(() => { });
     }
-    setToast({
-      msg: isResume ? "이력서 PDF 다운로드 (데모)" : "이메일 주소를 복사했습니다",
-      show: true,
-    });
+    setToast({ msg: "이메일 주소를 복사했습니다", show: true });
     clearTimeout(tRef.current);
     tRef.current = setTimeout(() => setToast((s) => ({ ...s, show: false })), 1900);
   };
@@ -333,10 +363,11 @@ function App() {
       <main id="main-content">
         <Hero data={DATA} onContact={goContact} />
         <About data={DATA} />
+        <Career data={DATA} />
         <TechStack data={DATA} />
         <Projects data={DATA} />
         <Troubleshooting data={DATA} />
-        <Writing data={DATA} />
+        {/* <Writing data={DATA} /> */}
         <Contact data={DATA} onCopy={copy} />
       </main>
       <Footer />

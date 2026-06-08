@@ -11,6 +11,7 @@ function Logo() {
 
 const NAV_LINKS = [
   ["about", "About"],
+  ["career", "Career"],
   ["stack", "Stack"],
   ["projects", "Projects"],
   ["writing", "Writing"],
@@ -139,11 +140,44 @@ export function About({ data }) {
   );
 }
 
+export function Career({ data }) {
+  return (
+    <section className="section" id="career" aria-labelledby="career-h">
+      <div className="wrap">
+        <SectionMarker num="02 —" label="Career & Education" />
+        <h2 id="career-h">이력</h2>
+        <p className="sub">현장에서 시스템을 만들고, 계속 배우며 검증해 왔습니다.</p>
+        <div className="cv" style={{ marginTop: 32 }}>
+          {data.career.map((g) => (
+            <Reveal className="cv-group" key={g.cat}>
+              <div className="cv-cat">
+                <Icon name={g.icon} size={15} />
+                {g.cat}
+              </div>
+              <div className="cv-items">
+                {g.items.map((it, i) => (
+                  <div className="cv-row" key={i}>
+                    <div className="cv-main">
+                      <span className="cv-org">{it.org}</span>
+                      <span className="cv-role">{it.role}</span>
+                    </div>
+                    <span className="cv-period">{it.period}</span>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function TechStack({ data }) {
   return (
     <section className="section" id="stack" aria-label="Tech Stack">
       <div className="wrap">
-        <SectionMarker num="02 —" label="Tech Stack" />
+        <SectionMarker num="03 —" label="Tech Stack" />
         <Reveal className="stack-grid">
           {data.stack.map((cat) => (
             <div className="stack-cell" key={cat.cat}>
